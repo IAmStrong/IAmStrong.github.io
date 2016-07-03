@@ -73,6 +73,10 @@ hr {
   margin-bottom: 3em;
 }
 
+.sec-work {
+  background: #f9f9f9;
+}
+
 .navbar-default {
   background: #fff;
 }
@@ -138,8 +142,8 @@ footer {
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .soc-media-ul li:not(:first-child) a {
@@ -153,6 +157,7 @@ footer {
   border-radius: 50%;
   border: 2px solid;
 }
+
 .soc-media-ul a:hover, .soc-media-ul a:focus {
   color: #ad0000;
 }
