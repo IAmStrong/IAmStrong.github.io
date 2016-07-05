@@ -69,6 +69,88 @@ hr {
   width: 7%;
 }
 
+/* Language Switcher */
+
+.language {
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 5%;
+}
+
+.language li {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  float: left;
+}
+
+.language li:last-child {
+  border-right: none;
+}
+
+.language li a {
+  padding: 3px 5px;
+  color: #fff;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  min-width: 40px;
+  text-align: center;
+}
+
+.language li a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+.language li a.is-active {
+  opacity: 0.7;
+}
+
+.center-block {
+    width: 270px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.row h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info li {
+  display: inline-block;
+  border-right: 1px solid #fff;
+  float: left;
+}
+
+.info li:last-child {
+  border-right: none;
+}
+.info li a {
+  padding: 3px 5px;
+  color: #3498db;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  min-width: 40px;
+  text-align: center;
+}
+.info li a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
 .sec-work .row {
   margin-bottom: 3em;
 }
