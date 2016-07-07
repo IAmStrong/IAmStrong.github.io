@@ -1,0 +1,58 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-rule: evenodd;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-5);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path class="cls-1" d="M-0.06,20A20,20,0,1,1,20,40a20,20,0,0,1-20-20"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-2" width="40" height="40"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <ellipse class="cls-2" cx="19.95" cy="19.97" rx="16.02" ry="16"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path class="cls-2" d="M19.35,25.93l-1.61,2.52a0.16,0.16,0,0,1-.14.08h0a0.16,0.16,0,0,1-.12-0.15v-3a0.16,0.16,0,0,1,.21-0.15l1.61,0.49a0.16,0.16,0,0,1,.11.1A0.16,0.16,0,0,1,19.35,25.93Zm4.23-.33a0.17,0.17,0,0,1-.08.1l-0.08,0h0L17.55,24a0.16,0.16,0,0,1-.11-0.11,0.16,0.16,0,0,1,0-.15l5.8-6.8-7.55,6.4a0.16,0.16,0,0,1-.16,0l-5-1.57a0.16,0.16,0,0,1-.11-0.14,0.16,0.16,0,0,1,.09-0.16l15.68-7.95a0.16,0.16,0,0,1,.23.18Z"/>
+    </clipPath>
+    <image id="image" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsSAAALEgHS3X78AAAAOUlEQVRYR+3NsQ0AIAzAsP7/NJzARBiw50iZ9cicgluMM8YZ44xxxjhjnDHOGGeMM8YZ44xx5r/xBizQrk8PwnohAAAAAElFTkSuQmCC"/>
+  </defs>
+  <title>icon-plane</title>
+  <g class="cls-3">
+    <g class="cls-4">
+      <use xlink:href="#image"/>
+    </g>
+  </g>
+  <g class="cls-5">
+    <g class="cls-4">
+      <image width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsSAAALEgHS3X78AAAAPklEQVRYR+3NMQ0AIQDAQBRi5uViBglMXwYuubFJx/zWFeNY/MQ4Y5wxzhhnjDPGGeOMccY4Y5wxzhhn3htvABAPlxznRtkAAAAASUVORK5CYII="/>
+    </g>
+  </g>
+  <g class="cls-6">
+    <g class="cls-4">
+      <use xlink:href="#image"/>
+    </g>
+  </g>
+</svg>

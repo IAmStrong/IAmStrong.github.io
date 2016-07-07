@@ -1,0 +1,58 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        clip-rule: evenodd;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        clip-path: url(#clip-path-3);
+      }
+
+      .cls-6 {
+        clip-path: url(#clip-path-5);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path class="cls-1" d="M-0.06,20A20,20,0,1,1,20,40a20,20,0,0,1-20-20"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-2" width="40" height="40"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <ellipse class="cls-2" cx="19.95" cy="19.97" rx="16.02" ry="16"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path class="cls-2" d="M20.14,19.75a0.68,0.68,0,1,1,.68-0.68A0.68,0.68,0,0,1,20.14,19.75Zm3-5.88v-0.4a0.5,0.5,0,0,0-.5-0.5H18.3a0.5,0.5,0,0,0-.5.5v0.4a0.5,0.5,0,0,0,.5.5h0.49v3.5L17.65,21h0s4.67-.08,5.31-0.74l0,0-0.86-2.32v-3.5h0.49A0.5,0.5,0,0,0,23.17,13.87ZM18.61,24.61a0.5,0.5,0,1,0-.5-0.5A0.5,0.5,0,0,0,18.61,24.61Zm3.26-2a0.63,0.63,0,1,0-.63.62A0.63,0.63,0,0,0,21.87,22.65Zm-0.51,3.63a0.87,0.87,0,1,0-.87-0.87A0.87,0.87,0,0,0,21.36,26.28ZM26.22,26a1.45,1.45,0,0,1-.15,1.36,1.48,1.48,0,0,1-1.23.65H16.12a1.48,1.48,0,0,1-1.23-.65A1.46,1.46,0,0,1,14.75,26l3.06-8.28V15.26a1.47,1.47,0,0,1-1-1.39v-0.4A1.48,1.48,0,0,1,18.3,12h4.38a1.48,1.48,0,0,1,1.48,1.47v0.4a1.48,1.48,0,0,1-1,1.39V17.7Z"/>
+    </clipPath>
+    <image id="image" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsSAAALEgHS3X78AAAAOUlEQVRYR+3NsQ0AIAzAsP7/NJzARBiw50iZ9cicgluMM8YZ44xxxjhjnDHOGGeMM8YZ44xx5r/xBizQrk8PwnohAAAAAElFTkSuQmCC"/>
+  </defs>
+  <title>icon-tube</title>
+  <g class="cls-3">
+    <g class="cls-4">
+      <use xlink:href="#image"/>
+    </g>
+  </g>
+  <g class="cls-5">
+    <g class="cls-4">
+      <image width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAIAAAADnC86AAAACXBIWXMAAAsSAAALEgHS3X78AAAAPklEQVRYR+3NsQ3AIADAMDb+P6J3wglMDQOWPEbKWN+8YhyLnxhnjDPGGeOMccY4Y5wxzhhnjDPGGePMe+MN7sFtVzw7S3YAAAAASUVORK5CYII="/>
+    </g>
+  </g>
+  <g class="cls-6">
+    <g class="cls-4">
+      <use xlink:href="#image"/>
+    </g>
+  </g>
+</svg>

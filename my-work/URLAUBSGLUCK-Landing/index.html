@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>URLAUBSGLÜCK Landing</title>
+
+        <meta name="description" content="URLAUBSGLÜCK Landing Page">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/unslider-min.js"></script>
+        <script src="js/main.js"></script>
+
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/unslider.css">
+        <link rel="stylesheet" href="css/media-queries.css">
+
+    </head>
+
+    <body>
+
+        <div class="preload"></div>
+
+        <!-- Promo -->
+
+        <div class="promo">
+
+            <header class="header">
+
+                <div class="header__authorization">
+
+                    <a href="#" class="authorization__log-in">Log in</a>
+
+                    <div class="login__popup">
+                        <form name="login" class="login__form">
+                            <img class="close__popup" src="images/close-sign.png">
+                            <h3>Login</h3>
+                            <fieldset>
+                                <input type="text" value="" placeholder="Username" id="username">
+                                <input type="password" value="" placeholder="Password" id="password">
+                                <input type="checkbox" id="remember-me" name="remember-me" checked />
+                                <label for="remember-me"><span class="label__text">Keep me logged in</span></label>
+                                <a href="#" class="login__reset">Forgot your password?</a>
+                                <input type="submit" value="Submit" id="button">
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <a href="#" class="authorization__sign-up">Sign up</a>
+
+                    <div class="sign-up__popup">
+                        <form name="sign-up" class="sign-up__form">
+                            <img class="close__popup" src="images/close-sign.png">
+                            <h3>Create an account</h3>
+                            <fieldset>
+                                <input type="text" value="" placeholder="Name" id="name">
+                                <input type="text" value="" placeholder="Username" id="username">
+                                <input type="text" name="email" placeholder="Email" size="50" />
+                                <input type="password" value="" placeholder="Password" id="password">
+                                <input type="password" value="" placeholder="Confirm password" id="confirm-password">
+                                <div class="register-switch">
+                                    <input type="radio" name="sex" value="Male" id="sex-m" class="register-switch-input" checked />
+                                    <label for="sex-m" class="register-switch-label">Male</label>
+                                    <input type="radio" name="sex" value="Female" id="sex-f" class="register-switch-input">
+                                    <label for="sex-f" class="register-switch-label">Female</label>
+                                </div>
+                                <div class="terms-of-service">
+                                    <input type="checkbox" id="tos" name="tos" checked />
+                                    <label for="tos"><span class="label__text">I agree to the <a href="#" class="tos">Terms of Service</a></span></label>
+                                </div>
+                                <div class="news-and-offers">
+                                    <input type="checkbox" id="news-and-offers" name="news-and-offers" checked />
+                                    <label for="news-and-offers"><span class="label__text">I want to receive news and special offers</span></label>
+                                </div>
+                                <input type="submit" value="Sign up" id="button">
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="header__logo">
+                    <a href="#" class="logo__a">URLAUBSGLÜCK</a>
+                </div>
+
+            </header>
+
+            <div class="promo__container">
+                <h1 class="container__span">Share your holiday dreams</h1>
+                <p class="container__span__description">And find the perfect partner to fullfill it</p>
+                <form class="container__form" action="#find">
+                    <input type="submit" class="container__button" value="Find your holiday partner">
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Wrapper -->
+
+        <div class="wrapper">
+
+            <!-- How it works -->
+
+            <div class="how-it-works">
+
+                <h2 class="how-it-works__h2">How Urlaubsglück works?</h2>
+
+                <div class="slider__1">
+                    <div class="step__arrows">
+                        <span class="arrows prev"></span>
+                        <span class="arrows next"></span>
+                    </div>
+                    <ul>
+                        <li class="step__1">
+                            <div class="step__info">
+                                <span class="step__span" href="#">Step 1</span>
+                                <h2 class="step__h2">Sed leo enim, condimentum</h2>
+                                <p class="step__p">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                            </div>
+                        </li>
+                        <li class="substep__1">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Register</span>
+                                <h2 class="step__h2">In enim justo</h2>
+                                <p class="step__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                            </div>
+                        </li>
+                        <li class="substep__2">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Search</span>
+                                <h2 class="step__h2">Nullam dictum</h2>
+                                <p class="step__p">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                            </div>
+                        </li>
+                        <li class="substep__3">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Find</span>
+                                <h2 class="step__h2">Aenean vulputate</h2>
+                                <p class="step__p">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="slider__2">
+                    <div class="step__arrows">
+                        <span class="arrows prev"></span>
+                        <span class="arrows next"></span>
+                    </div>
+                    <ul>
+                        <li class="step__2">
+                            <div class="step__info">
+                                <span class="step__span">Step 2</span>
+                                <h2 class="step__h2">Morbi velit risus</h2>
+                                <p class="step__p">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+                            </div>
+                        </li>
+                        <li class="substep__1">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Register</span>
+                                <h2 class="step__h2">In enim justo</h2>
+                                <p class="step__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                            </div>
+                        </li>
+                        <li class="substep__2">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Search</span>
+                                <h2 class="step__h2">Nullam dictum</h2>
+                                <p class="step__p">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                            </div>
+                        </li>
+                        <li class="substep__3">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Find</span>
+                                <h2 class="step__h2">Aenean vulputate</h2>
+                                <p class="step__p">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="slider__3">
+                    <div class="step__arrows">
+                        <span class="arrows prev"></span>
+                        <span class="arrows next"></span>
+                    </div>
+                    <ul>
+                        <li class="step__3">
+                            <div class="step__info">
+                                <span class="step__span">Step 3</span>
+                                <h2 class="step__h2">Sed leo enim, condimentum</h2>
+                                <p class="step__p">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+                            </div>
+                        </li>
+                        <li class="substep__1">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Register</span>
+                                <h2 class="step__h2">In enim justo</h2>
+                                <p class="step__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                            </div>
+                        </li>
+                        <li class="substep__2">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Search</span>
+                                <h2 class="step__h2">Nullam dictum</h2>
+                                <p class="step__p">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.</p>
+                            </div>
+                        </li>
+                        <li class="substep__3">
+                            <div class="step__info">
+                                <span class="step__span sub" href="#">Find</span>
+                                <h2 class="step__h2">Aenean vulputate</h2>
+                                <p class="step__p">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Partners -->
+
+            <div class="partners">
+
+                <h2 class="partners__h2" id="find">Meet a partner for your best holiday</h2>
+
+                <div class="partners__wrap">
+
+                    <div class="partner__1 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__1__icon partner__icon"></div>
+                            <a class="partner__1__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner__wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__2 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__2__icon partner__icon"></div>
+                            <a class="partner__2__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner__wrap">
+                            <h4 class="partner__name">Heather Walker</h4>
+                            <p class="partner__description">I'm a happy person that loves cats and climbing on mountains.</p>
+                        </div>
+                    </div>
+                    <div class="partner__3 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__3__icon partner__icon"></div>
+                            <a class="partner__3__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Lucas Marsha</h4>
+                            <p class="partner__description">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+                        </div>
+                    </div>
+                    <div class="partner__4 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__4__icon partner__icon"></div>
+                            <a class="partner__4__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__5 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__1__icon partner__icon"></div>
+                            <a class="partner__1__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__6 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__2__icon partner__icon"></div>
+                            <a class="partner__2__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__7 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__3__icon partner__icon"></div>
+                            <a class="partner__3__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__8 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__4__icon partner__icon"></div>
+                            <a class="partner__4__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__9 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__1__icon partner__icon"></div>
+                            <a class="partner__1__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__10 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__2__icon partner__icon"></div>
+                            <a class="partner__2__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__11 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__3__icon partner__icon"></div>
+                            <a class="partner__3__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+                    <div class="partner__12 partner">
+                        <div class="partner__pic__wrap">
+                            <div class="partner__4__icon partner__icon"></div>
+                            <a class="partner__4__pic partner__pic__hover" href="#"></a>
+                        </div>
+                        <div class="partner_wrap">
+                            <h4 class="partner__name">Bradley Hunter</h4>
+                            <p class="partner__description">Based in Chicago. I love playing tennis and loud music.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Partners Button -->
+
+            <div class="partners__button">
+                <button class="partners__button__a">See other partners</button>
+            </div>
+
+            <!-- Ideas Gallery -->
+
+            <div class="ideas__gallery">
+
+                <h3 class="ideas__gallery__h3">Discover holiday activity ideas</h3>
+
+                <a href="#">
+                    <div class="one border__flex">
+                        <h4 class="ideas__gallery__h4">Sport and Activity</h4></div>
+                </a>
+                <a href="#">
+                    <div class="two border__flex">
+                        <h4 class="ideas__gallery__h4">Wellness and Health</h4></div>
+                </a>
+                <a href="#">
+                    <div class="three border__flex">
+                        <h4 class="ideas__gallery__h4">Extreme Sports and Expeditions</h4></div>
+                </a>
+                <a href="#">
+                    <div class="four border__flex">
+                        <h4 class="ideas__gallery__h4">Games</h4></div>
+                </a>
+                <a href="#">
+                    <div class="five border__flex">
+                        <h4 class="ideas__gallery__h4">Culture and education</h4></div>
+                </a>
+                <a href="#">
+                    <div class="six border__flex">
+                        <h4 class="ideas__gallery__h4">Relaxation</h4></div>
+                </a>
+                <a href="#">
+                    <div class="seven border__flex">
+                        <h4 class="ideas__gallery__h4">Travelling</h4></div>
+                </a>
+            </div>
+
+            <!-- Search Partners -->
+
+            <div class="search__partners">
+                <div class="search__partners__wrap">
+                    <h2 class="search__partners__h2">Discover holiday activity ideas</h2>
+                    <span class="search__partners__interests">Hi! What are your holiday interests?</span>
+                    <form class="search__partners__search-form">
+                        <input type="text" placeholder="Enter your interests">
+                        <button type="button">Search partners</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__left">
+                    <a href="#" class="footer__logo">URLAUBSGLÜCK</a>
+                    <div class="footer__links">
+                        <div class="footer__links__company">
+                            <h3 class="footer__links__h3">Company</h3>
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contacts</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__links__partners">
+                            <h3 class="footer__links__h3">Partners</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__right">
+                    <p>Designed by</p>
+                    <a class="footer__areto-logo" href="#"></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+</html>
