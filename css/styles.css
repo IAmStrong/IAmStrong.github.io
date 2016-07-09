@@ -160,9 +160,46 @@ hr {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
--webkit-box-shadow: 4px 4px 7px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 4px 4px 7px -5px rgba(0,0,0,0.75);
-box-shadow: 4px 4px 7px -5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact-me li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.contact-me li span {
+    margin-left: 14px;
+}
+
+.icon {
+   
+ 
+     background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+    width: 68px;
+    height: 68px;
+display: inline-block;
+vertical-align:middle
+}
+
+.gmail {
+     background-image: url('../images/gmail-icon.png');
+        background-color: #f5f5f5;
+            background-size: 53px 35px;
+}
+
+.linkedin {
+    background-image: url('../images/linkedin-icon.png');
+       background-size: 70px 70px;
+}
+
+.skype {
+    background-image: url('../images/skype-icon.png');
+       background-size: 70px 70px;
 }
 
 .no-bg:after {
