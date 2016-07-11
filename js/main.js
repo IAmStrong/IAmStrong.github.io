@@ -7,7 +7,11 @@ $(function() {
     });
         $('.works').children().mouseover(function() {
         $(this).find('.project-thumbnail').addClass('no-bg');
+        $(this).find('.button').css('opacity', 1);
+        $(this).find('.project-thumbnail > p').css('opacity', 0);
     }).mouseout(function () {
         $('.project-thumbnail').removeClass('no-bg');
+        $(this).find('.button').css('opacity', 0.6);
+        $(this).find('.project-thumbnail > p').css('opacity', 0.8);
     });
 });
