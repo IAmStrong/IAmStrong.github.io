@@ -161,6 +161,8 @@ border-top-right-radius: 3px;
 
 .project-thumbnail.shorthand {
     background: url(../images/work/Shorthand_Generator.jpg) no-repeat;
+    background-size: cover;
+    background-position: center 42%;
 }
 
 .project-thumbnail.urlaubsgluck {
