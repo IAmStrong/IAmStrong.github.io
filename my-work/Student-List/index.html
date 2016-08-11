@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student List</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <script src="libs/angularjs/1.5.7/angular.min.js"></script>
+        <script src="libs/angularjs/1.5.7/angular-animate.min.js"></script>
+
+        <!-- AngularJS application -->
+
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/list.js"></script>
+        <script src="scripts/controllers/modal.js"></script>
+        <script src="scripts/directives/batchWatch.js"></script>
+        <script src="scripts/directives/executeOnEscInfo.js"></script>
+        <script src="scripts/directives/executeOnEscModal.js"></script>
+        <script src="scripts/directives/executeOnEnter.js"></script>
+        <script src="scripts/services/shareData.factory.js"></script>
+        <script src="scripts/filters/format.js"></script>
+    </head>
+    <body>
+        <section ng-app="studentList">
+            <div class="container" ng-controller="list-ctrl">
+                <div class="list">
+                    <header>
+                        <h1>{{ group }}</h1>
+                        <a ng-click="addStudent()">Add New</a>
+                    </header>
+                    <summary class="details" ng-click="showOrderOptions()" ng-class="{shown: shown}"><span>Order by</span></summary>
+                    <div ng-show="optionsContainer" class='slide'>
+                        <ul class="orderBy">
+                            <li>
+                                <input type="radio" name="orderBy" id="none" ng-click="order.set(false)" checked>
+                                <i></i>
+                                <label for="none">none</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="orderBy" id="firstName" ng-click="order.set('firstName')">
+                                <i></i>
+                                <label for="firstName">First Name</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="orderBy" id="lastName" ng-click="order.set('lastName')">
+                                <i></i>
+                                <label for="lastName">Last Name</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="students">
+                        <li ng-repeat="student in students | orderBy:order.option | filter:search" ng-click="showInfo(student); currentElement($index)" ng-class="{active: $index == el}">
+                            <span batch-watch="$index">{{ fullName(student) }}</span>
+                            <a ng-click="removeStudent(student, $index)">–</a>
+                        </li>
+                    </ul>
+                    <input type="text" placeholder="Search for a student..." ng-model="query">
+                </div>
+                <div class="info" ng-show="info" execute-on-esc-info>
+                    <button class="close" ng-click="info=false; el=null;">&#10006;</button>
+                    <h2>{{ title }}</h2>
+                    <ul>
+                        <li ng-repeat="(key, value) in info" ng-style="changeBgColor(value)">
+                            <span class="key">{{ key | format}}</span>
+                            <span>{{ value }}</span>
+                        </li>
+                    </ul>
+                    <a ng-click="editStudent()">Edit</a>
+                </div>
+            </div>
+            <div class="modal-container" ng-controller="modal-ctrl" ng-show="showModal">
+                <div class="modal-form">
+                    <button class="close" ng-click="showModal=false" execute-on-esc-modal>&#10006;</button>
+                    <h3>{{ title }}</h3>
+                    <input type="text" ng-model="firstName" ng-change="checkInput('firstName')" id="firstName" placeholder="First Name">
+                    <input type="text" ng-model="lastName" ng-change="checkInput('lastName')" id="lastName" placeholder="Last Name">
+                    <select ng-model="gender" ng-style="errorBorder">
+                        <option value="" selected="true" disabled="disabled">Gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                    <input type="text" ng-model="skype" ng-change="checkInput('skype')" id="skype" placeholder="Skype">
+                    <button class="submit" ng-click="getInputValues(mode.action)" execute-on-enter>Submit</button>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
