@@ -57,6 +57,7 @@ app.controller('list-ctrl', function($scope, shareData) {
     $scope.addStudent = function () {
         $scope.reset();
         shareData.call('open-modal-add');
+        $scope.addMode = true;
     }
     $scope.removeStudent = function(student, index) {
         $scope.students.splice($scope.students.indexOf(student), 1);
@@ -74,7 +75,7 @@ app.controller('list-ctrl', function($scope, shareData) {
     $scope.currentElement = function(index) {
         $scope.el = index;
     }
-    $scope.showOrderOptions = function () {
+    $scope.toggleOrderOptions = function () {
         $scope.optionsContainer =! $scope.optionsContainer; 
         $scope.shown =! $scope.shown;
     }
@@ -103,6 +104,7 @@ app.controller('list-ctrl', function($scope, shareData) {
     });
     shareData.store('add-new-student', function () {
         $scope.students.push(shareData.get('new-student'));
+        $scope.addMode = false;
     });
     shareData.store('edit-existed-student', function () {
         var student = shareData.get('edited-student');

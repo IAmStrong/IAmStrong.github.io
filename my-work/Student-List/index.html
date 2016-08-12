@@ -15,7 +15,7 @@
         <script src="scripts/controllers/list.js"></script>
         <script src="scripts/controllers/modal.js"></script>
         <script src="scripts/directives/batchWatch.js"></script>
-        <script src="scripts/directives/executeOnEscInfo.js"></script>
+        <script src="scripts/directives/executeOnEscList.js"></script>
         <script src="scripts/directives/executeOnEscModal.js"></script>
         <script src="scripts/directives/executeOnEnter.js"></script>
         <script src="scripts/services/shareData.factory.js"></script>
@@ -24,12 +24,12 @@
     <body>
         <section ng-app="studentList">
             <div class="container" ng-controller="list-ctrl">
-                <div class="list">
+                <div class="list" execute-on-esc-list>
                     <header>
                         <h1>{{ group }}</h1>
                         <a ng-click="addStudent()">Add New</a>
                     </header>
-                    <summary class="details" ng-click="showOrderOptions()" ng-class="{shown: shown}"><span>Order by</span></summary>
+                    <summary class="details" ng-click="toggleOrderOptions()" ng-class="{shown: shown}"><span>Order by</span></summary>
                     <div ng-show="optionsContainer" class='slide'>
                         <ul class="orderBy">
                             <li>
@@ -57,7 +57,7 @@
                     </ul>
                     <input type="text" placeholder="Search for a student..." ng-model="query">
                 </div>
-                <div class="info" ng-show="info" execute-on-esc-info>
+                <div class="info" ng-show="info">
                     <button class="close" ng-click="info=false; el=null;">&#10006;</button>
                     <h2>{{ title }}</h2>
                     <ul>
