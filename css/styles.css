@@ -159,6 +159,10 @@ border-top-right-radius: 3px;
     transition: all .2s linear;
 }
 
+.project-thumbnail.student-list {
+    background: url(../images/work/Student_List.jpg) no-repeat;
+}
+
 .project-thumbnail.shorthand {
     background: url(../images/work/Shorthand_Generator.jpg) no-repeat;
     background-size: cover;
