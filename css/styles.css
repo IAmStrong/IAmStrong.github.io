@@ -160,7 +160,8 @@ border-top-right-radius: 3px;
 }
 
 .project-thumbnail.student-list {
-    background: url(../images/work/Student_List.jpg) no-repeat;
+    background: url(../images/work/Student_List.jpg) no-repeat 9% 23%;
+
 }
 
 .project-thumbnail.shorthand {
