@@ -4,18 +4,16 @@ var App = App || {};
 
 function start () { // Application Entry Point.
     loadJSON(function(response) { // Load locations.json.
-        var jsonResponse = JSON.parse(response);
-
-        App.data = jsonResponse;
+        App.data = JSON.parse(response);
 
         var controller = new App.Controller();
-        
+
         controller.init(); // Run the controller
     });
 
     function loadJSON(callback) {
         var xobj = new XMLHttpRequest();
-    
+
         xobj.overrideMimeType('application/json');
         xobj.open('GET', 'js/db/locations.json', true);
         xobj.onreadystatechange = function () {
