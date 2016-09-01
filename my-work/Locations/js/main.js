@@ -10,7 +10,7 @@ function start () { // Application Entry Point.
 
         App.data = jsonResponse;
     });
-    
+    console.log(response, App.data);
     controller.init(); // Run the controller
 
     function loadJSON(callback) {
