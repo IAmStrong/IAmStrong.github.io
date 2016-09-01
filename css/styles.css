@@ -159,6 +159,11 @@ border-top-right-radius: 3px;
     transition: all .2s linear;
 }
 
+.project-thumbnail.clock {
+    background: url(../images/work/Clock.jpg) no-repeat;
+    background-size: cover;
+}
+
 .project-thumbnail.locations {
     background: url(../images/work/Locations.jpg) no-repeat;
     background-size: cover;
