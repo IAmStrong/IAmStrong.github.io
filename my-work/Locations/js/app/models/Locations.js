@@ -6,9 +6,7 @@ App.Locations = (function () {
     var collection = {};
 
     function Locations(data) {
-        var locations = data || {};
-console.log(data);
-        locations.forEach(function(location) {
+        data.forEach(function(location) {
             var model = new App.Location(location),
                 id = model.get().id;
 
