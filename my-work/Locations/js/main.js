@@ -25,6 +25,9 @@ function start () { // Application Entry Point.
         }
         xobj.send(null);
     }
+    
+        console.log('ctrl', response, App.data);
+    controller.init(); // Run the controller
 }
 
 document.addEventListener('DOMContentLoaded', start, false);
