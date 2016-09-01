@@ -159,6 +159,12 @@ border-top-right-radius: 3px;
     transition: all .2s linear;
 }
 
+.project-thumbnail.locations {
+    background: url(../images/work/Locations.jpg) no-repeat;
+
+}
+
+
 .project-thumbnail.student-list {
     background: url(../images/work/Student_List.jpg) no-repeat 9% 23%;
 
