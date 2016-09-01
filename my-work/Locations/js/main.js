@@ -8,12 +8,6 @@ loadJSON(function(response) { // Load locations.json.
     App.data = jsonResponse;
 });
 
-function start () { // Application Entry Point.
-    var controller = new App.Controller();
-
-    controller.init(); // Run the controller
-}
-
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
 
@@ -25,6 +19,12 @@ function loadJSON(callback) {
         }
     }
     xobj.send(null);
+}
+
+function start () { // Application Entry Point.
+    var controller = new App.Controller();
+
+    controller.init(); // Run the controller
 }
 
 document.addEventListener('DOMContentLoaded', start, false);
