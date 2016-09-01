@@ -14,7 +14,7 @@ App.system = (function () {
         var xobj = new XMLHttpRequest();
     
         xobj.overrideMimeType('application/json');
-        xobj.open('GET', 'db/locations.json', true);
+        xobj.open('GET', 'js/db/locations.json', true);
         xobj.onreadystatechange = function () {
             if (xobj.readyState == 4 && xobj.status == '200') {
                 callback(xobj.responseText);
