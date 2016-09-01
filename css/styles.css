@@ -161,7 +161,7 @@ border-top-right-radius: 3px;
 
 .project-thumbnail.locations {
     background: url(../images/work/Locations.jpg) no-repeat;
-
+    background-size: cover;
 }
 
 
