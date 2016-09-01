@@ -3,15 +3,13 @@
 var App = App || {};
 
 function start () { // Application Entry Point.
-    var controller = new App.Controller();
-
     loadJSON(function(response) { // Load locations.json.
-        var jsonResponse = JSON.parse(response);
+        var jsonResponse = JSON.parse(response),
+            controller = new App.Controller();
 
         App.data = jsonResponse;
+        controller.init(); // Run the controller
     });
-    console.log(response, App.data)
-    controller.init(); // Run the controller
 
     function loadJSON(callback) {
         var xobj = new XMLHttpRequest();
