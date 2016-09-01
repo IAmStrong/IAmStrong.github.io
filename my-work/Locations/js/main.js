@@ -4,6 +4,7 @@ var App = App || {};
 
 function start () { // Application Entry Point.
     loadJSON(function(response) { // Load locations.json.
+    console.log(response);
         var jsonResponse = JSON.parse(response),
             controller = new App.Controller();
 
