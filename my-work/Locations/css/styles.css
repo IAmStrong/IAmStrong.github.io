@@ -370,10 +370,10 @@ header img {
 /* Media queries */
 
 @media screen and (min-width: 1680px) {
-    .locations {
+    /* .locations {
         max-width: 1500px;
         position: relative;
-    }
+    } */
     .tip {
         top: 100px;
         right: 6%;
