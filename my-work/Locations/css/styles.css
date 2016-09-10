@@ -395,15 +395,15 @@ header img {
 }
 
 @media screen and (max-width: 1540px) {
+    .locations {
+        padding: 20px auto 0;
+    }
     .tip {
         right: 5%;
     }
 }
 
 @media screen and (max-width: 1460px) {
-    .location {
-        padding: 20px auto 0;
-    }
     .tip {
         top: 40px;
         right: 20%;
