@@ -369,13 +369,9 @@ header img {
 
 /* Media queries */
 
-@media screen and (min-width: 1680px) {
-    /* .locations {
-        max-width: 1500px;
-        position: relative;
-    } */
+@media screen and (max-width: 1680px) {
     .tip {
-        top: 100px;
+        top: 220px;
         right: 6%;
     }
 }
