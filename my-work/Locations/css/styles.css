@@ -376,10 +376,10 @@ header img {
     }
 } */
 
-@media screen and (max-width: 2400px) {
+@media screen and (max-width: 2200px) {
     .tip {
         top: 220px;
-        right: 20%;
+        right: 12%;
     }
 }
 
