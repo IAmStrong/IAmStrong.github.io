@@ -369,6 +369,13 @@ header img {
 
 /* Media queries */
 
+@media screen and (min-width: 3200px) {
+    .tip {
+        top: 220px;
+        right: 29%;
+    }
+}
+
 @media screen and (min-width: 2400px) {
     .tip {
         top: 220px;
