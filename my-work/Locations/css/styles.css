@@ -387,16 +387,16 @@ header img {
     }
 }
 
+@media screen and (min-width: 1680px) {
+    .locations {
+        margin: 20px auto 0;
+    }
+}
+
 @media screen and (max-width: 1680px) {
     .tip {
         top: 220px;
         right: 6%;
-    }
-}
-
-@media screen and (min-width: 1540px) {
-    .locations {
-        margin: 20px auto 0;
     }
 }
 
