@@ -396,7 +396,7 @@ header img {
 
 @media screen and (max-width: 1540px) {
     .locations {
-        padding: 20px auto 0;
+        margin: 20px auto 0;
     }
     .tip {
         right: 5%;
