@@ -159,6 +159,11 @@ border-top-right-radius: 3px;
     transition: all .2s linear;
 }
 
+.project-thumbnail.voting-app {
+    background: url(../images/work/Voting-App.jpg) no-repeat;
+    background-size: cover;
+}
+
 .project-thumbnail.clock {
     background: url(../images/work/Clock.jpg) no-repeat;
     background-size: cover;
@@ -166,6 +171,11 @@ border-top-right-radius: 3px;
 
 .project-thumbnail.game-of-life {
     background: url(../images/work/Game-of-life.jpg) no-repeat;
+    background-size: cover;
+}
+
+.project-thumbnail.calendar {
+    background: url(../images/work/Calendar.jpg) no-repeat;
     background-size: cover;
 }
 

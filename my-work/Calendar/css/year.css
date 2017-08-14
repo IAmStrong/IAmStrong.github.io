@@ -1,0 +1,69 @@
+.year {
+    width: 1360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.year_month-container {
+    width: 290px;
+    height: 290px;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.year_month-header {
+    font-size: 17px;
+    height: 20px;
+    text-align: left;
+    padding: 0 0 11px 13px;
+    color: #e74c3c;
+}
+
+.year_month-week-days {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3px;
+}
+
+.year_month-day {
+    font-size: 16px;
+    width: 38px;
+    text-align: center;
+    color: #8c97b2;
+}
+
+.year_days-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.year_day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    width: 38px;
+    height: 38px;
+    color: #444c63;
+}
+
+.year_day:nth-child(6):not(.current),
+.year_day:nth-child(7n):not(.current),
+.year_day:nth-child(13):not(.current),
+.year_day:nth-child(20):not(.current),
+.year_day:nth-child(27):not(.current),
+.year_day:nth-child(34):not(.current),
+.year_day:nth-child(41):not(.current) {
+    color: #444c63;
+    opacity: 0.3;
+}
+
+.year_day.current {
+    background: #e64c66;
+    color: #fff;
+    border-radius: 50%;
+}

@@ -1,0 +1,242 @@
+.week .week-event {
+    position: absolute;
+    height: 20px;
+    width: 179px;
+    font-size: 14px;
+    padding: 0 5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    user-select: none;
+    cursor: pointer;
+}
+
+.week .week-event.preview {
+    opacity: 0.6;
+    background: #e2fbff;
+    color: #00bfdd;
+    border-left: 4px solid #00bfdd;
+    transition: all 0.2s ease;
+}
+
+.week .event_info {
+    position: absolute;
+    padding: 10px 10px 10px 15px;;
+    width: 320px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px rgba(151, 179, 206, 0.3);
+    z-index: 3;
+}
+
+.week .event_edit {
+    position: absolute;
+    padding: 10px 10px 10px 20px;;
+    width: 300px;
+    height: 170px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px rgba(151, 179, 206, 0.3);
+    z-index: 3;
+}
+
+.week .event_info.hidden {
+    display: none;
+}
+
+.week .event-title {
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: 500;
+    color: rgb(68, 76, 99);
+}
+
+.week .event-title.edit {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 0;
+    color: #8c97b2;
+    border: 0;
+    outline: 0;
+}
+
+.week .event-name_input {
+    width: 100%;
+    margin-top: 17px;
+    padding: 5px;
+    opacity: 0.6;
+    color: rgb(68, 76, 99);
+    font-size: 18px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+.week .event-name_input::-webkit-input-placeholder {
+    color: rgba(140, 151, 178, 0.3);
+}
+.week .event-name_input::-moz-placeholder {
+    color: rgba(140, 151, 178, 0.3);
+}
+.week .event-name_input:-ms-input-placeholder {
+    color: rgba(140, 151, 178, 0.3);
+}
+.week .event-name_input:-moz-placeholder {
+    color: rgba(140, 151, 178, 0.3);
+}
+
+.week .event_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.week .event_header.edit {
+    align-items: flex-start;
+}
+
+.week .close-sign {
+    width: 13px;
+    height: 13px;
+}
+
+.week .event_bottom-row {
+    width: 100%;
+}
+
+.week .event_button-create {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: rgb(21, 164, 250);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 9px 23px;
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.event_button-delete {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 12px;
+    padding: 0;
+    background: none;
+    color: #e64c66;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+.week .event_button-create:hover {
+    background-color: #22b1ff;
+}
+
+.week .event_when {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #444c63;
+}
+
+.week .event_when.edit {
+    padding-left: 0;
+    margin-top: 14px;
+}
+
+.week .event_time {
+    color: #8c97b2;
+}
+
+.week .event_time.event_end {
+    padding-top: 0;
+}
+
+.week .event_when p {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.event_colors {
+    position: absolute;
+    bottom: 12px;
+    padding: 0;
+    margin: 0;
+}
+
+.event_colors.edit {
+    left: 89px;
+}
+
+.event_colors li {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 4px;
+    list-style: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+.event_colors li.selected {
+    opacity: 0.4;
+}
+
+.event_colors .red {
+    background: #e64c66;
+}
+
+.event_colors .yellow {
+    background: #ffab00;
+}
+
+.event_colors .blue {
+    background: #00bfdd;
+}
+
+.event_colors .green {
+    background: #27ae60;
+}
+
+.week .week-event.red-event {
+    background: #fbbcc7;
+    color: #e64c66;
+    border-left: 4px solid #e64c66;
+}
+
+.week .week-event.yellow-event {
+    background: #ffe7b5;
+    color: #ffab00;
+    border-left: 4px solid #ffab00;
+}
+
+.week .week-event.blue-event {
+    background: #e2fbff;
+    color: #00bfdd;
+    border-left: 4px solid #00bfdd;
+}
+
+.week .week-event.green-event {
+    background: #9affd3;
+    color: #27ae60;
+    border-left: 4px solid #27ae60;
+}
+
+.event_container .event-text {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.event_container .event_heading {
+    padding-top: 3px;
+}

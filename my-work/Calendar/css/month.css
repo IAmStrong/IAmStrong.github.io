@@ -1,0 +1,68 @@
+.month {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.month_header-container {
+    font-size: 0;
+    height: 40px;
+    border-bottom: 3px solid rgb(218, 223, 234);
+}
+
+.month_header {
+    display: inline-block;
+    width: 180px;
+    height: 100%;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8c97b2;
+    border-top: 1px solid #dadfea;
+    border-left: 1px solid #dadfea;
+    border-right: 1px solid #dadfea;
+    border-width: 1px 0px 1px 1px;
+    line-height: 40px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.month_header:last-child {
+    border-right: 1px solid #dadfea;
+}
+
+.month_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.month_day-cell {
+    position: relative;
+    width: 180px;
+    height: 120px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #dadfea;
+    border-left: 1px solid #dadfea;
+}
+
+.month_day-cell.current {
+    background: rgba(21, 164, 250, 0.05);
+}
+
+.month_day-cell:nth-child(7n) {
+     border-right: 1px solid #dadfea;
+}
+
+.month_day-cell.cell-disabled {
+    background: -webkit-linear-gradient(45deg, #eef1f7 25%, #fbfeff 25%, #fbfeff 50%, #eef1f7 50%, #eef1f7 75%, #fbfeff 75%, #fbfeff);
+    background: linear-gradient(45deg, #eef1f7 25%, #fbfeff 25%, #fbfeff 50%, #eef1f7 50%, #eef1f7 75%, #fbfeff 75%, #fbfeff);
+    background-size: 60px 60px;
+}
+
+.month_day {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    color: #8c97b2;
+}

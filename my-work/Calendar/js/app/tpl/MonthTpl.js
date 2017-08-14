@@ -1,0 +1,42 @@
+'use strict';
+
+var App = App || {};
+
+App.Templates.Month = _.template([
+    '<% var days = [\'Понедельник\', \'Вторник\', \'Среда\', \'Четверг\', \'Пятница\', \'Суббота\', \'Воскресенье\']; %>',
+    '<% var begin, dataSize = _.size(data), j = 0, k = 0;%>',
+    '<% for (var i = 0; i < days.length; i++) { %>',
+        '<% if (data[1] === days[i]) { %>',
+            '<% begin = i; %>',
+            '<% break; %>',
+        '<% } %>',
+    '<% } %>',
+    '<div class="month">',
+        '<div class="month_header-container">',
+            '<% _.each(days, function (item) { %>',
+                '<div class="month_header" data-week-day="<%= item %>"><%= item %></div>',
+            '<% }); %>',
+        '</div>',
+        '<div class="month_wrapper">',
+        '<% var currentMonth = todayMonth === month; %>',
+        '<% var currentYear = currentYear === year; %>',
+        '<% for (var i = 0; i < (days.length * 6); i++) { %>',
+            '<% if (i < begin || j >= dataSize) k = 0; %>',
+            '<% var currentDay = Number(todayDay) === k; %>',
+            '<div class="month_day-cell <% if (i < begin || j >= dataSize) { %>', 
+                    '<%= \'cell-disabled\' %>',
+                '<% } %>',
+                '<% if (currentMonth && currentDay && currentYear) { %>current<% } %>',
+                '">',
+                '<span class="month_day">',
+                    '<% if (i >= begin && j < dataSize) { %>',
+                        '<%= Object.keys(data)[j] %>',
+                        '<% j++; %>',
+                    '<% } %>',
+                '</span>',
+            '</div>',
+            '<% k++; %>',
+        '<% } %>',
+        '</div>',
+    '</div>'
+].join(''));
