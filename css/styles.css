@@ -164,6 +164,11 @@ border-top-right-radius: 3px;
     background-size: cover;
 }
 
+.project-thumbnail.game-of-life {
+    background: url(../images/work/Game-of-life.jpg) no-repeat;
+    background-size: cover;
+}
+
 .project-thumbnail.locations {
     background: url(../images/work/Locations.jpg) no-repeat;
     background-size: cover;

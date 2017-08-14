@@ -1,0 +1,209 @@
+body, html, h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+    position: relative;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid #c6cacb;
+    box-sizing: border-box;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #34495e;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+#gameboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#gameboard.active {
+    cursor: crosshair;
+}
+
+.controls {
+    position: fixed;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.controls h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 16px 0;
+}
+
+.controls button {
+    display: block;
+    border: 0;
+    outline: 0;
+    margin: 0 auto;
+    background: #48c9b0;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.controls button#start,
+.controls button#pause,
+.controls button#stop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 6px;
+    transition: transform ease 0.3s;
+}
+
+.controls button i.fa,
+.controls button i.fa,
+.controls button i.fa {
+    font-size: 14px;
+    text-shadow: 2px 2px 9px rgba(0, 150, 118, 1);
+    padding-right: 7px;
+}
+
+.controls input#speed-range {
+    -webkit-appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    transform: rotateY(180deg);
+    background: #48c9b0;
+    outline: none;
+}
+
+.controls input#speed-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #0daf8f;
+}
+
+.controls button#draw-mode {
+    background: none;
+    color: #48c9b0;
+    cursor: auto;
+    transition: color ease 0.1s;
+}
+
+.controls button#draw-mode .fa {
+    font-size: 38px;
+    text-shadow: 0 1px 0 #fff;
+    cursor: pointer;
+}
+
+.controls button#pause {
+    margin: 10px auto;
+}
+
+.controls button#start:disabled i.fa,
+.controls button#pause:disabled i.fa,
+.controls button#stop:disabled i.fa {
+    text-shadow: none;
+}
+
+.controls button#start:disabled {
+    background: #22a38a;
+}
+
+.controls button#pause:disabled {
+    background: #f1c40f;
+    color: #34495e;
+}
+
+.controls button#stop:disabled {
+    background: #e74c3c;
+}
+
+.controls button#start:not(:disabled):hover,
+.controls button#pause:not(:disabled):hover,
+.controls button#stop:not(:disabled):hover {
+    transform: translate(10px);
+}
+
+.controls button#draw-mode.active {
+    color: #e74c3c;
+}
+
+.stats {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 160px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: rgba(127, 140, 141, 0.7);
+    padding: 10px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.stats p {
+    padding: 0;
+    margin: 0;
+}
+
+.stats h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+p.state,
+p.speed,
+p.cells,
+p.size,
+p.draw,
+p.alive,
+p.generations {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #cad0d4;
+}
+
+span#state,
+span#speed,
+span#cells,
+span#size,
+span#draw,
+span#alive,
+span#generations {
+    color: #fff;
+    text-transform: none;
+}

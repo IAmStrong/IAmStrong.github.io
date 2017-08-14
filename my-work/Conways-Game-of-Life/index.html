@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Conway's Game of Life</title>
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/libs/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Conway's Game of Life</h1>
+        </header>
+        <section id="game">
+            <div class="controls">
+                <h2>Game State</h2>
+                <button id="start" data-control-action="Start"><i class="fa fa-play" aria-hidden="true"></i>Start</button>
+                <button id="pause" data-control-action="Pause"><i class="fa fa-pause" aria-hidden="true"></i>Pause</button>
+                <button id="stop" data-control-action="Stop"><i class="fa fa-stop" aria-hidden="true"></i>Stop</button>
+                <h2>Game Speed</h2>
+                <input id="speed-range" type="range" step="100" min="100" max="3000">
+                <h2>Draw Mode</h2>
+                <button id="draw-mode"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+            </div>
+            <div class="stats">
+                <h2>Game Stats</h2>
+                <p class="state">Current State: <span id="state"></span></p>
+                <p class="speed">Current Speed: <span id="speed"></span></p>
+                <p class="size">Gameboard Size: <span id="size"></span></p>
+                <p class="cells">Cell Count: <span id="cells"></span></p>
+                <p class="alive">Alive Cells: <span id="alive"></span></p>
+                <p class="generations">Generations: <span id="generations"></span></p>
+                <p class="draw">Draw Mode: <span id="draw"></span></p>
+            </div>
+        </section>
+        <script src="js/libs/mediator.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/game/Controls.js"></script>
+        <script src="js/game/Stats.js"></script>
+        <script src="js/game/Board.js"></script>
+        <script src="js/game/Cell.js"></script>
+        <script src="js/game/Controller.js"></script>
+    </body>
+</html>
